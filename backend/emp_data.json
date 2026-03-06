@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "user_id": 2,
+    "first_name": "John",
+    "last_name": "Doe",
+    "department": "Engineering",
+    "designation": "Software Engineer",
+    "contact_number": null,
+    "base_salary": "80000.00",
+    "joined_date": "2023-01-14T18:30:00.000Z",
+    "birthdate": null,
+    "status": "Inactive"
+  },
+  {
+    "id": 4,
+    "user_id": 5,
+    "first_name": "MUHAMMAD",
+    "last_name": "AFRITH D",
+    "department": "Engineering",
+    "designation": "Dharmapuri",
+    "contact_number": "7397463508",
+    "base_salary": "50000.00",
+    "joined_date": "2026-02-27T18:30:00.000Z",
+    "birthdate": "2007-07-14T18:30:00.000Z",
+    "status": "Active"
+  },
+  {
+    "id": 5,
+    "user_id": 6,
+    "first_name": "Javith ",
+    "last_name": "J",
+    "department": "HR",
+    "designation": "Thiruvannamalai",
+    "contact_number": null,
+    "base_salary": "25000.00",
+    "joined_date": "2026-03-02T18:30:00.000Z",
+    "birthdate": null,
+    "status": "Active"
+  },
+  {
+    "id": 6,
+    "user_id": 7,
+    "first_name": "Mohammed",
+    "last_name": "Farooq D",
+    "department": "Engineering",
+    "designation": "Software Engineer",
+    "contact_number": "7010155611",
+    "base_salary": "20000.00",
+    "joined_date": "2026-03-04T18:30:00.000Z",
+    "birthdate": "2007-11-10T18:30:00.000Z",
+    "status": "Active"
+  },
+  {
+    "id": 7,
+    "user_id": 8,
+    "first_name": "Kumaresan",
+    "last_name": "B",
+    "department": "Sales",
+    "designation": "Marketing Specialist",
+    "contact_number": "9988774455",
+    "base_salary": "30000.00",
+    "joined_date": "2026-03-04T18:30:00.000Z",
+    "birthdate": "2007-07-29T18:30:00.000Z",
+    "status": "Active"
+  },
+  {
+    "id": 8,
+    "user_id": 9,
+    "first_name": "Lohith ",
+    "last_name": "S",
+    "department": "Marketing",
+    "designation": "Product Manager",
+    "contact_number": "9994280492",
+    "base_salary": "27000.00",
+    "joined_date": "2026-03-05T18:30:00.000Z",
+    "birthdate": "2007-03-01T18:30:00.000Z",
+    "status": "Active"
+  }
+]

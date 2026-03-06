@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Calendar & Response Optimization */
+input[type="date"] {
+  position: relative;
+  min-height: 42px;
+}
+
+::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(0.5);
+  transition: transform 0.2s ease;
+}
+
+::-webkit-calendar-picker-indicator:hover {
+  transform: scale(1.1);
+}
+
+/* Hardware acceleration for smooth transitions */
+.animate-in {
+  will-change: transform, opacity;
+}
+
+/* Fast responsive hover states */
+.transition-all {
+  transition-duration: 150ms !important;
+}
+
+@media (max-width: 640px) {
+  .grid {
+    gap: 1rem !important;
+  }
+}
+
+/* Premium Table Design System */
+.premium-table-container {
+  @apply bg-white dark:bg-gray-900 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 overflow-hidden transition-all duration-300;
+}
+
+.premium-table {
+  @apply w-full text-left border-collapse;
+}
+
+.premium-table thead tr {
+  @apply bg-gray-50/50 dark:bg-gray-800/50 border-b border-gray-100 dark:border-gray-800;
+}
+
+.premium-table th {
+  @apply px-6 py-4 text-[10px] font-black uppercase tracking-widest text-gray-500 dark:text-gray-400;
+}
+
+.premium-table td {
+  @apply px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-50 dark:border-gray-800/50 transition-colors;
+}
+
+.premium-table tr:last-child td {
+  @apply border-b-0;
+}
+
+.premium-table tr:hover td {
+  @apply bg-blue-50/30 dark:bg-blue-900/10;
+}
+
+/* Glassmorphism Badges */
+.glass-badge {
+  @apply px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest border transition-all;
+}
+
+.glass-badge-blue {
+  @apply bg-blue-100/50 text-blue-700 border-blue-200 dark:bg-blue-900/30 dark:text-blue-400 dark:border-blue-800;
+}
+
+.glass-badge-green {
+  @apply bg-green-100/50 text-green-700 border-green-200 dark:bg-green-900/30 dark:text-green-400 dark:border-green-800;
+}
+
+.glass-badge-red {
+  @apply bg-red-100/50 text-red-700 border-red-200 dark:bg-red-900/30 dark:text-red-400 dark:border-red-800;
+}
+
+.glass-badge-yellow {
+  @apply bg-yellow-100/50 text-yellow-700 border-yellow-200 dark:bg-yellow-900/30 dark:text-yellow-400 dark:border-yellow-800;
+}
